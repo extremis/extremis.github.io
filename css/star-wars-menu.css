@@ -1,33 +1,125 @@
-        @include lightsaber(#FF0);
+$icon-size:80px;
+$w: 300px;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@mixin lightsaber($color){
+  background:mix($color,#fff,10%);
+  box-shadow:$color 0px 0px 0px 2px;
+  &:hover {
+    box-shadow:$color 0px 0px 20px 2px;
+    text-shadow:$color 0px 0px 6px,$color 0px 0px 10px;
+  }
+}
+
+html, body {
+  background:#222;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+#container {
+  width: $icon-size;
+  height:$icon-size;
+  position:absolute;
+  top:0%;
+  left:0%;
+}
+
+#burger {
+  cursor:pointer;
+  opacity:0;
+  animation:fadein 0.2s ease 1s forwards;
+  overflow:hidden;
+  position:relative;
+  width:100%;
+  height:100%;
+  %burgersection {
+    display:block;
+    position:absolute;
+    left:50%;
+    transform:translate(-50%,-50%) rotate(0deg);
+    height:10%;
+    width:70%;
+    transform-origin:50% 50%;
+    transition: top 0.4s ease 0.4s,
+      transform 0.4s ease 0.4s;
+    &:before, &:after {
+      content:"";
+      display:block;
+      height:40%;
+      background:white;
+      position:absolute;
+      top:50%;
+      transform:translate(0%,-45%);
+      transition:background 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+    &:before {
+      left:0;
+      width:calc(-1px + 75%);
+      border-radius:10px 0px 0px 10px;
+    }
+    &:after {
+      right:0;
+      width:calc(-1px + 25%);
+    }
+  }
+
+    &:hover {
+    .bun {
+      &.top:before {
+        background:#FEE;
+        box-shadow:#F00 0px 0px 10px 1px;
       }
+      &.bottom:before {
+        background:#DFF;
+        box-shadow:#0FF 0px 0px 10px 1px;
+      }
+    }
+    .filling {
+      &:before {
+        background:#EFE;
+        box-shadow:#0F0 0px 0px 10px 1px;
+      }
+    }
+  }
+  
+  .bun {
+    @extend %burgersection;
+    &.top {
+      top:25%;
+    }
+    &.bottom {
+      top:75%;
+    }
+  }
+ .filling {
+    @extend %burgersection;
+    top:50%;
+    transform:translate(-50%,-50%) rotate(180deg);
+    animation:green-ls-out 0.8s ease forwards;
+
+  }
+  
+  &.active {
+    .bun {
+      border-radius: 3px;
+      top:50%;
+      transition: top 0.4s ease,
+        transform 0.4s ease;
+      &.top {
+        transform:translate(-50%,-50%) rotate(-225deg);
+      }
+      &.bottom {
+        transform:translate(-50%,-50%) rotate(405deg);
+      }
+    }
+    .filling {
+      transform: translate(-50%,-50%) rotate(-90deg);
+      animation:green-ls-in 0.8s ease forwards;
     }
   }
 }
 
-@keyframes green-ls-in {
-  0% { 
-    transform: translate(-50%,-50%) rotate(180deg); }
-  50% { 
-    transform: translate(-50%,-50%) rotate(-90deg); }
-  100% {
-    transform: translate(-50%,-50%) rotate(-90deg) translate(200%,0%);}
-}
-
-@keyframes green-ls-out {
-  0% {
-    transform: translate(-50%,-200%) rotate(-90deg);}
-  50% { 
-    transform: translate(-50%,-50%) rotate(-90deg); }
-
-  100% { 
-    transform: translate(-50%,-50%) rotate(180deg); }
-}
-
-@keyframes fadein {
-  from {
-    Opacity:0;
-  }
-  to {
-    Opacity:1;
-  }
-}
