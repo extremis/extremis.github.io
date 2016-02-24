@@ -1,0 +1,33 @@
+        @include lightsaber(#FF0);
+      }
+    }
+  }
+}
+
+@keyframes green-ls-in {
+  0% { 
+    transform: translate(-50%,-50%) rotate(180deg); }
+  50% { 
+    transform: translate(-50%,-50%) rotate(-90deg); }
+  100% {
+    transform: translate(-50%,-50%) rotate(-90deg) translate(200%,0%);}
+}
+
+@keyframes green-ls-out {
+  0% {
+    transform: translate(-50%,-200%) rotate(-90deg);}
+  50% { 
+    transform: translate(-50%,-50%) rotate(-90deg); }
+
+  100% { 
+    transform: translate(-50%,-50%) rotate(180deg); }
+}
+
+@keyframes fadein {
+  from {
+    Opacity:0;
+  }
+  to {
+    Opacity:1;
+  }
+}
