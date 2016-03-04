@@ -11,10 +11,6 @@ $w: 300px;
   }
 }
 
-html, body {
-  background:#222;
-}
-
 * {
   box-sizing:border-box;
 }
