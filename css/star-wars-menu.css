@@ -66,8 +66,8 @@ html, body {
       width:calc(-1px + 25%);
     }
   }
-
-    &:hover {
+  
+  &:hover {
     .bun {
       &.top:before {
         background:#FEE;
@@ -95,7 +95,7 @@ html, body {
       top:75%;
     }
   }
- .filling {
+  .filling {
     @extend %burgersection;
     top:50%;
     transform:translate(-50%,-50%) rotate(180deg);
@@ -123,3 +123,90 @@ html, body {
   }
 }
 
+nav {
+  &.show {
+    transform:translatex(0%);
+  }
+  font-family:Open Sans;
+  color:white;
+  background:#111;
+  position:absolute;
+  transform:translatex(-100%);
+  transition:transform 0.2s ease;
+  top:$icon-size;
+  bottom:0px;
+  padding-right:16px;
+  width:$w;
+  ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+    //font-weight:bolder;
+    li {
+      @include lightsaber(#4df);
+      font-size:1.75em;
+      line-height:1.25em;
+      padding:0px;
+      padding-left:0px;
+      margin:16px 0px;
+      width:0;
+      border-radius:0px 100px 100px 0px;
+      transition:width 0.2s ease,
+        padding 0.2s ease,
+        color 0.2s ease,
+        text-shadow 0.2s ease;
+      &:hover {
+        width:100%;
+        padding:0px 16px 0px 0px;
+        color:black;
+      }
+      a {
+        display:block;
+        text-decoration:none;
+        width:$w;
+        color:inherit;
+        padding-left:16px;
+      }
+      &.green {
+        @include lightsaber(#0F0);
+      }
+      &.red {
+        @include lightsaber(#F00);
+      }
+      &.purple {
+        @include lightsaber(#c0c);
+      }
+      &.yellow {
+        @include lightsaber(#FF0);
+      }
+    }
+  }
+}
+
+@keyframes green-ls-in {
+  0% { 
+    transform: translate(-50%,-50%) rotate(180deg); }
+  50% { 
+    transform: translate(-50%,-50%) rotate(-90deg); }
+  100% {
+    transform: translate(-50%,-50%) rotate(-90deg) translate(200%,0%);}
+}
+
+@keyframes green-ls-out {
+  0% {
+    transform: translate(-50%,-200%) rotate(-90deg);}
+  50% { 
+    transform: translate(-50%,-50%) rotate(-90deg); }
+
+  100% { 
+    transform: translate(-50%,-50%) rotate(180deg); }
+}
+
+@keyframes fadein {
+  from {
+    Opacity:0;
+  }
+  to {
+    Opacity:1;
+  }
+}
