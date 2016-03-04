@@ -15,7 +15,7 @@ $w: 300px;
   box-sizing:border-box;
 }
 
-#container {
+#starwars-container {
   width: $icon-size;
   height:$icon-size;
   position:absolute;
