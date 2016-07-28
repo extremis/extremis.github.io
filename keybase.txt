@@ -1,1 +1,69 @@
 
+==================================================================
+https://keybase.io/maut1
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://stevenmautone.com
+  * I am maut1 (https://keybase.io/maut1) on keybase.
+  * I have a public key with fingerprint 49C6 AC51 FC81 4EED A0B1  4018 112C C40F 9192 F4FE
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01019926359fc0ad3bb2c08840538c500e38d071a72a5a42c30c25fa170efa46ccb30a",
+            "fingerprint": "49c6ac51fc814eeda0b14018112cc40f9192f4fe",
+            "host": "keybase.io",
+            "key_id": "112cc40f9192f4fe",
+            "kid": "01019926359fc0ad3bb2c08840538c500e38d071a72a5a42c30c25fa170efa46ccb30a",
+            "uid": "358180da7e53ffe2851082073ff58b19",
+            "username": "maut1"
+        },
+        "service": {
+            "hostname": "stevenmautone.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1469741947,
+    "expire_in": 157680000,
+    "prev": "8b66bd4ccfc5154ea3e972d1109574751c6c2a269a4aba578597de0c19f038be",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMIsAnicrVJrSBRRFF4rk8ywCIoiyob6YW557zzvbNEDA8GMMLJShOXOnTvrpDuz
+7cyuLiYp9LAHElaGUb8CC4ItExUqslIpantQQS8rKYLeUBG9xLoj9a+f3T+Xc873
+ffc7557+SWN9mWm3x3UOT5/58lza9UttMd+Gw3V1dZxm6wkuUMdV0dGLVuvUcYNV
+ps4FOAABVFVeFiTVIADrgqbxBCAkAklARAKACkgHCsQKjyUs8kQAhJcMDBVADSzK
+hGgCwJyfM0wrRKORqGm5TFZUiYyJBA2CoEipjoEGRQARhDwhIjBUqPKGaFBGrLQd
+j8HMadihi0yb5VgQHLX3D/x/9h0blRMkBBHQsUIlwTAojyQIEA8UFkhIg6oHdGjU
+wmHK0GEccyFX7+dYKm4S6k3Va+NP2XFpnFoeyLboImKHGTsStV2b2NWsXOm6ESfg
+0d1ExMPXUC34RymomZbOJskYcRp1TNviApAhiWt60lCUVUWEqqj4OVobMaM0aHoI
+SZERYMd7h8aZJNJkWdNFQgz2CZJIsUBVhdchBKqkiIoEiUx4zMsqFrGGJQVJqqJT
+QKBqAAFp3pwdutmyuYDAbOKQ15UZsrAbi1Ku/vLFinG+tEzf+PQx3ob5MidM/rt3
+PaGMX/blM/eKX2+Uj4Zu1G5vWzg12XV296aX65obyjNSfYvvt39rmZ+9tjGvK0sL
+dTXvP126b0v57ewb5OSKz+s7w4+PNc3eExtI5G9zir/vHIZLPi248Kin4MAJEMk5
+8KG0s7Uxa42/YsbBovqr6hz4Kn/HlVVd6T+Xfsyfd7X3+Yjzvr8wmRyeP9ITz2yY
+ZOy/NtHXRMd+yW6vVHmU92Ow5bz7MPXi2VBJR2pld0HN3caNp866J3v7Vj94KuLB
+oVNvOir3rptmG5Ej1Yd2XcspG7Bya4ueLFt+Z+7KTwtQ4fui3q39LdvunCg7cqvV
+vNc9Jflu8G0i3H88t+T4zVk/uCVNj1MjX38Dqc9Kng==
+=LlmB
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/maut1
+
+==================================================================
