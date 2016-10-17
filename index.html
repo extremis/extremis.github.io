@@ -20,7 +20,8 @@
         <script src="js/jquery-1.11.3.min.js" type="text/javascript" name="jquery"></script>
         <script src="js/plugins.js" type="text/javascript" name="plugins"></script>
         <script src="js/slides.js" type="text/javascript" name="main-scripts"></script>
-        <script src="js/annyang.js" type="text/javascript" name="speech"></script>
+        <script src="js/annyang.js" type="text/javascript" name="annyang"></script>
+        <script src="js/speechkit.min.js" type="text/javascript" name="speechkit"></script>
 
     </head>
     <body class="slides cards smooth simplifiedMobile defaultScroll animated">
@@ -277,8 +278,12 @@
     };
     // Add our commands to annyang
     annyang.addCommands(commands);
-    // Start listening.
-    annyang.start();
+    // Tell KITT to use annyang
+    SpeechKITT.annyang();
+    // Define a stylesheet for KITT to use
+    SpeechKITT.setStylesheet('css/themes/flat.css');
+    // Render KITT's interface
+    SpeechKITT.vroom();
   }
 </script>
 
