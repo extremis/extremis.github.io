@@ -282,6 +282,11 @@
     SpeechKITT.annyang();
     // Define a stylesheet for KITT to use
     SpeechKITT.setStylesheet('css/themes/flat.css');
+    // Add instructional texts
+    SpeechKITT.setInstructionsText('What can I help you with?');
+    SpeechKITT.setSampleCommands(['Hello', 'Show directions', 'Call restaurant']);
+    // If user clicks start button, remember his choice for 1 minute
+    SpeechKITT.rememberStatus(1);
     // Render KITT's interface
     SpeechKITT.vroom();
   }
