@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>OneMessage Wireframe</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../dist/css/bootsketch.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .navbar-top-links>li{display:inline-block;}
+
+      input { font-size: 1em; } /* prevent zoom in mobile */
+
+      ol {
+        /* list style is faked with number inputs */
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+          position: relative;
+          min-height: 1em;
+          cursor: move;
+          padding: .5em .5em .5em 2.5em;
+          background: #eee;
+          border: 1px solid #ccc;
+          margin: .25em 0;
+          border-radius: .25em;
+          max-width: 14em;
+      }
+
+      li input {
+          /* Move these to visually fake the ol numbers */
+          position: absolute;
+          width: 1.75em;
+          left: .25em;
+          top: .25em;
+          border: 0;
+          text-align: center;
+          background: transparent
+      }
+
+      li label {
+        /* visually hidden offscreen so it still benefits screen readers */
+          position: absolute;
+          left: -9999px;
+      }
+
+      /* sortable plugin styles when dragged */
+      .dragged {
+          position: absolute;
+          opacity: 0.5;
+          z-index: 2000;
+      }
+
+      li.placeholder {
+          position: relative;
+          background: darkblue;
+      }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div id="page-wrapper" style="margin:0px;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Preferences</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>Grid options</h3>
+                            <p>Our current situation.</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>
+                                                Email
+                                            </th>
+                                            <th>
+                                                Text Message
+                                            </th>
+                                            <th>
+                                                Push Notification
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                          <th>Account Services<br />
+                                          <small>Fraud, OTP, Credit, Risk, Care</small></th>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Payment Received</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Payment Reminder</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Statement Ready</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Account Snapshot</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Spend Tracking</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Approaching Limit</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Purchase Alerts</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Amex Offers</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>The mess it could become...</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>
+                                                Email
+                                            </th>
+                                            <th>
+                                                Text Message
+                                            </th>
+                                            <th>
+                                                Push Notification
+                                            </th>
+                                            <th>
+                                                Facebook Messenger
+                                            </th>
+                                            <th>Apple Business Chat</th>
+                                            <th>Google Assistant</th>
+                                            <th>Amazon Alexa</th>
+                                            <th>WhatsApp</th>
+                                            <th>WeChat</th>
+                                            <th>...</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                          <th>Account Services<br />
+                                          <small>Fraud, OTP, Credit, Risk, Care</small></th>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Payment Received</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Payment Reminder</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Statement Ready</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Account Snapshot</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Spend Tracking</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Approaching Limit</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Purchase Alerts</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Amex Offers</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Dining</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>...</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>Categorization can help.</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>
+                                                Email
+                                            </th>
+                                            <th>
+                                                Text Message
+                                            </th>
+                                            <th>
+                                                Push Notification
+                                            </th>
+                                            <th>
+                                                Facebook Messenger
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                          <th>Account Services</th>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="5"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Statements, Payments, and Plans </th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="5"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Membership Rewards</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="5"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Amex Offers</th>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>Simplified</h3>
+                            <p>Preferences</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+
+                                    <tbody>
+                                        <tr>
+                                          <th>Account Services</th>
+                                          <td><fieldset disabled><input type="checkbox" checked></fieldset></td>
+                                        </tr>
+
+                                        <tr>
+                                          <th>Statements, Payments, and Plans </th>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <th>Membership Rewards</th>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                          <th>Amex Offers</th>
+                                          <td><input type="checkbox"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>Channels</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped sorted_table">
+
+                                    <tbody>
+                                        <tr class="sorted_table">
+                                          <th>Email</th>
+                                          <td>cardmember@amex.com</td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2"></td>
+                                        </tr>
+                                        <tr class="sorted_table">
+                                          <th>Text Message</th>
+                                          <td>555-555-1212</td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2"></td>
+                                        </tr>
+                                        <tr>
+                                          <th colspan="2">Amex Mobile Push Notification</th>
+                                        </tr>
+                                        <tr>
+                                          <th><small>Steve's iPhone X</small></th>
+                                          <td><input type="checkbox" checked></td>
+                                        </tr>
+                                        <tr>
+                                          <th><small>Google Pixel 2 XL</small></th>
+                                          <td><input type="checkbox" checked></td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2"></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Facebook Messenger</th>
+                                          <td><a>Connect your account</a></td>
+                                        </tr>
+                                        <tr>
+                                          <th>WhatsApp</th>
+                                          <td><a>Connect your account</a></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Apple Business Chat</th>
+                                          <td><a>Logout</a></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Google Assistant</th>
+                                          <td><a>Connect your account</a></td>
+                                        </tr>
+                                        <tr>
+                                          <th>Amazon Alexa</th>
+                                          <td><a>Connect your account</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div style="align:right;">
+                                <ol><li>Push Notifications</li></ol>
+                                <form id="sort-it">
+                                    <ol>
+                                      <li>WhatsApp</li>
+
+                                      <li>Facebook Messenger</li>
+
+                                      <li>Google Assistant</li>
+
+                                      <li>Amazon Alexa</li>
+
+                                      <li>Text Message</li>
+                                    </ol>
+                                </form>
+                                <ol><li>Email</li></ol>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+    <script src="../dist/js/jquery-sortable.js"></script>
+
+<script>
+$(function(){
+    // uses https://johnny.github.io/jquery-sortable/js/jquery-sortable-min.js
+		$('#sort-it ol').sortable({
+			onDrop: function(item) {
+				$(item).removeClass("dragged").removeAttr("style");
+				$("body").removeClass("dragging");
+
+				getInitialOrder('#sort-it li');
+			}
+		});
+
+		getInitialOrder('#sort-it li');
+
+    //bind stuff to number inputs
+		$('#sort-it ol input[type="number"]').focus(function(){
+			$(this).select();
+		}).change(function(){
+			updateAllNumbers($(this), '#sort-it input');
+		}).keyup(function(){
+			updateAllNumbers($(this), '#sort-it input');
+		});
+
+    //bind to form submission
+    $('#sort-it').submit(function(e){
+      reorderItems('#sort-it li', '#sort-it ol');
+      e.preventDefault();
+    })
+
+}); // end doc ready
+
+function getInitialOrder(obj){
+		var num = 1;
+		$(obj).each(function(){
+       //set object initial order data based on order in DOM
+			$(this).find('input[type="number"]').val(num).attr('data-initial-value', num);
+			num++;
+		});
+      $(obj).find('input[type="number"]').attr('max', $(obj).length); //give it an html5 max attr based on num of objects
+}
+
+function updateAllNumbers(currObj, targets){
+        var delta = currObj.val() - currObj.attr('data-initial-value'), //if positive, the object went down in order. If negative, it went up.
+                c = parseInt(currObj.val(), 10), //value just entered by user
+                cI = parseInt(currObj.attr('data-initial-value'), 10), //original object val before change
+                top = $(targets).length;
+
+        //if the user enters a number too high or low, cap it
+        if(c > top){
+            currObj.val(top);
+        }else if(c < 1){
+            currObj.val(1);
+        }
+
+		$(targets).not($(currObj)).each(function(){ //change all the other objects
+			var v = parseInt($(this).val(), 10); //value of object changed
+
+			if (v >= c && v < cI && delta < 0){ //object going up in order pushes same-numbered and in-between objects down
+				$(this).val(v + 1);
+			} else if (v <= c && v > cI && delta > 0){ //object going down in order pushes same-numbered and in-between objects up
+				$(this).val(v - 1);
+			}
+		}).promise().done(function(){
+			//after all the fields update based on new val, set their data element so further changes can be tracked
+			//(but ignore if no value given yet)
+			$(targets).each(function(){
+				if($(this).val() !== ""){
+					$(this).attr('data-initial-value', $(this).val());
+				}
+			});
+		});
+}
+
+function reorderItems(things, parent){
+  for(var i = 1; i <= $(things).length; i++){
+    $(things).each(function(){
+      var x = parseInt($(this).find('input').val(), 10);
+      if(x === i){
+        $(this).appendTo(parent);
+      }
+    });
+  }
+}
+</script>
+
+</body>
+
+</html>
