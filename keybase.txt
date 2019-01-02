@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/maut1
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mautone.com
+  * I am maut1 (https://keybase.io/maut1) on keybase.
+  * I have a public key ASA8VIfN6XeJKq7tpjAGhfBNscaj_N2zT7LxREjJ-yraLAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01203c5487cde977892aaeeda6300685f04db1c6a3fcddb34fb2f14448c9fb2ada2c0a",
+      "host": "keybase.io",
+      "kid": "01203c5487cde977892aaeeda6300685f04db1c6a3fcddb34fb2f14448c9fb2ada2c0a",
+      "uid": "358180da7e53ffe2851082073ff58b19",
+      "username": "maut1"
+    },
+    "merkle_root": {
+      "ctime": 1546464088,
+      "hash": "3397247b8eccdaede1d85d12c22afbf80f8209440becdaf23523d3d54aef5af7f54110e4a1855526e19168f373cfa0bbb2cd0852da21b1b6dc92ad26be718714",
+      "hash_meta": "5569290f7215c418d4e5a58cda6d7339afc92184fb92642916a07c28fe278600",
+      "seqno": 4222065
+    },
+    "service": {
+      "entropy": "MFri+xNZf6ErQxJx+CX8d/r/",
+      "hostname": "mautone.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.12.2"
+  },
+  "ctime": 1546464105,
+  "expire_in": 504576000,
+  "prev": "47d86fc0629da62c80debf6610037a17e87ea5d70729a7a570dfa0bee154e356",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgPFSHzel3iSqu7aYwBoXwTbHGo/zds0+y8URIyfsq2iwKp3BheWxvYWTESpcCDMQgR9hvwGKdpiyA3r9mEAN6F+h+pdcHKaelcN+gvuFU41bEIFI2L655OVQiAA4GhC3yzdt2lbeeSSOMfrmuIbpoBatJAgHCo3NpZ8RAdfAJ+iugqmPD4/pm/wb8/EIF0QeGt35UfeXu9wQ0nzDHSO0aCSxG1CqyEl2BVqiIA9h7SfkXdaUhV0z8cyThC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKAcj5NmjdqDgXe1bynB2gRiOqCmwn3nP3VRB8TTr6pno3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/maut1
+
+==================================================================
