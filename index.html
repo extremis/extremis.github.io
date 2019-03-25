@@ -37,7 +37,22 @@
 
 		<!-- Custom Scripts -->
 		<script src="js/custom.js" type="text/javascript" name="custom-scripts"></script>
+		<style>
+h1 {
+  font-size: 20px;
+  padding-right: 20px;
+  display: inline-block;
+}
 
+h1 span {
+  width: 20px;
+  margin-bottom: -1px;
+  height: 2px;
+  background: black;
+  opacity: 0;
+  display: inline-block;
+}
+		</style>
 	</head>
 	<body class="slides scroll simplifiedMobile smoothScroll animated">
 
@@ -134,7 +149,7 @@
   </div>
 </nav>
 
-<!-- Sidebar
+<!-- Sidebar -->
 <nav class="sidebar deepPurple" data-sidebar-id="1">
   <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
   <div class="content">
@@ -160,7 +175,7 @@
       <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pinterest"></use></svg></a></li>
     </ul>
   </div>
-</nav> -->
+</nav>
 
 <!-- Slide 1 (#23) -->
 <section class="slide fade kenBurns">
@@ -168,8 +183,8 @@
     <div class="container">
       <div class="wrap">
 
-        <div class="ae-1"><p class="hero margin-bottom-1">maut1</p></div>
-        <h1 class="huge cropBottom ae-2">Steven Mautone</h1>
+        <div class="ae-1"><p class="hero margin-bottom-1">Steven Mautone</p></div>
+	      <h1 class="huge cropBottom ae-2">maut1<span></span></h1>
 
 <!--script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
 <script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/maut1" data-format="inline" data-related="false"></script-->
@@ -366,6 +381,16 @@
     spaceMode: true
   }, "5c461f62db336c6619cf300a");
 </script> -->
+
+<script>
+setInterval(function() {
+  $('span').animate({
+    opacity: 1
+  }, 600).animate({
+    opacity: 0
+  }, 600)
+}, 1200);
+</script>
 
 	</body>
 </html>
