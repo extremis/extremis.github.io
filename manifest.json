@@ -1,6 +1,6 @@
 {
-  "name": "WebpageHero",
-  "start_url": "https://webpagehero.com/index.html",
+  "name": "Mautone",
+  "start_url": "https://mautone.com/index.html",
   "display": "standalone",
   "theme_color": "black",
   "background_color": "black",
@@ -41,6 +41,5 @@
       "type": "image/png",
       "density": "4.0"
     }
-  ],
-  "permissions": "audio"
+  ]
 }
