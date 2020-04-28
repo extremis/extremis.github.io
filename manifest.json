@@ -2,8 +2,8 @@
   "name": "Mautone",
   "start_url": "https://mautone.com/index.html",
   "display": "standalone",
-  "theme_color": "black",
-  "background_color": "black",
+  "theme_color": "white",
+  "background_color": "white",
   "icons": [
     {
       "src": "/assets/images/logo-mautone_square.png",
