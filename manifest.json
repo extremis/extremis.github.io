@@ -1,5 +1,6 @@
 {
   "name": "Mautone",
+  "short_name": "Mautone",
   "start_url": "https://mautone.com/index.html",
   "display": "standalone",
   "theme_color": "white",
